@@ -128,7 +128,9 @@ final DynamicLibrary _qjsLib = Platform.environment['FLUTTER_TEST'] == 'true'
                 'libquickjs_c_bridge_plugin.so')
             : (Platform.isAndroid
                 ? DynamicLibrary.open('libfastdev_quickjs_runtime.so')
-                : DynamicLibrary.process())));
+                : (Platform.isOhos
+                    ? DynamicLibrary.open('libquickjs_c_bridge.so')
+                    : DynamicLibrary.process()))));
 
 /// DLLEXPORT JSValue *jsThrow(JSContext *ctx, JSValue *obj)
 final Pointer<JSValue> Function(
