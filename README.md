@@ -296,6 +296,13 @@ To enable http calls, add this to your files:
 </plist>
 ```
 
+## OpenHarmony
+
+The C wrapper library is hosted on this github repository: <https://github.com/yeliulee/quickjs-c-bridge>
+
+We just separated the code to allow build it and in this repository we have only the released shared library, so each application using the flutter_js does not need to keep recompiling it all the time
+
+Currently only arm64-v8a provided. You can build it for other architectures as well.
 
 ## Windows and Linux
 
