@@ -19,7 +19,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_js:
+  flutter_js_ohos:
     # When depending on this package from a real application you should use:
     #   flutter_js2: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints

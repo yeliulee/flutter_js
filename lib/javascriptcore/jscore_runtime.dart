@@ -3,12 +3,12 @@ import 'dart:ffi';
 import 'dart:typed_data';
 
 import 'package:ffi/ffi.dart';
-import 'package:flutter_js/javascript_runtime.dart';
-import 'package:flutter_js/javascriptcore/binding/js_object_ref.dart'
+import 'package:flutter_js_ohos/javascript_runtime.dart';
+import 'package:flutter_js_ohos/javascriptcore/binding/js_object_ref.dart'
     as jsObject;
-import 'package:flutter_js/javascriptcore/flutter_jscore.dart';
-import 'package:flutter_js/javascriptcore/jscore_bindings.dart';
-import 'package:flutter_js/js_eval_result.dart';
+import 'package:flutter_js_ohos/javascriptcore/flutter_jscore.dart';
+import 'package:flutter_js_ohos/javascriptcore/jscore_bindings.dart';
+import 'package:flutter_js_ohos/js_eval_result.dart';
 
 class JavascriptCoreRuntime extends JavascriptRuntime {
   late Pointer _contextGroup;
@@ -201,9 +201,11 @@ class JavascriptCoreRuntime extends JavascriptRuntime {
 
     future.then((value) {
       final encoded = json.encode(value);
-      evaluate('__JSC_promise_result$id.resolve($encoded); __JSC_promise_result$id = null;');
+      evaluate(
+          '__JSC_promise_result$id.resolve($encoded); __JSC_promise_result$id = null;');
     }).catchError((error) {
-      evaluate('__JSC_promise_result$id.reject("$error"); __JSC_promise_result$id = null;');
+      evaluate(
+          '__JSC_promise_result$id.reject("$error"); __JSC_promise_result$id = null;');
     });
     return jsValueRef;
   }

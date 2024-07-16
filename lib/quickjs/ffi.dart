@@ -9,6 +9,7 @@ import 'dart:ffi';
 import 'dart:io';
 import 'dart:isolate';
 import 'package:ffi/ffi.dart';
+import 'package:flutter_platform_utils/flutter_platform_utils.dart';
 
 extension ListFirstWhere<T> on Iterable<T> {
   T? firstWhereOrNull(bool Function(T) test) {
@@ -128,7 +129,7 @@ final DynamicLibrary _qjsLib = Platform.environment['FLUTTER_TEST'] == 'true'
                 'libquickjs_c_bridge_plugin.so')
             : (Platform.isAndroid
                 ? DynamicLibrary.open('libfastdev_quickjs_runtime.so')
-                : (Platform.isOhos
+                : (PlatformUtils.isOhos
                     ? DynamicLibrary.open('libquickjs_c_bridge.so')
                     : DynamicLibrary.process()))));
 

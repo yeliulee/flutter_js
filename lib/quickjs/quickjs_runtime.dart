@@ -3,8 +3,8 @@ import 'dart:ffi';
 import 'dart:io';
 
 import 'package:ffi/ffi.dart';
-import 'package:flutter_js/flutter_js.dart';
-import 'package:flutter_js/quickjs/utf8_null_terminated.dart';
+import 'package:flutter_js_ohos/flutter_js.dart';
+import 'package:flutter_js_ohos/quickjs/utf8_null_terminated.dart';
 
 import 'qjs_typedefs.dart';
 

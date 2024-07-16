@@ -1,6 +1,6 @@
 {
   "module": {
-    "name": "flutter_js",
+    "name": "flutter_js_ohos",
     "type": "har",
     "deviceTypes": [
       "default",

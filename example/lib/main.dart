@@ -2,7 +2,7 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_js/flutter_js.dart';
+import 'package:flutter_js_ohos/flutter_js.dart';
 import 'package:flutter_js_example/ajv_example.dart';
 
 void main() {

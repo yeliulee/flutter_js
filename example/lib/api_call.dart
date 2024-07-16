@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter_js/flutter_js.dart';
+import 'package:flutter_js_ohos/flutter_js.dart';
 
 // example to show how to an api call can be made and used a Future in dart
 Future<dynamic> getUser() {

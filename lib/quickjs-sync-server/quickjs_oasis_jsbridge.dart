@@ -4,7 +4,7 @@ import 'dart:io';
 import 'dart:isolate';
 import 'dart:ui';
 
-import 'package:flutter_js/flutter_js.dart';
+import 'package:flutter_js_ohos/flutter_js.dart';
 import 'package:sync_http/sync_http.dart';
 
 ReceivePort _callDartReceivePort = new ReceivePort();

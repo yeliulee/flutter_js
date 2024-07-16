@@ -1,4 +1,4 @@
-name: flutter_js
+name: flutter_js_ohos
 description: A Javascript engine to use with flutter.
   It uses Quickjs on Android and JavascriptCore on IOS
 version: 0.6.1
@@ -14,6 +14,7 @@ dependencies:
   ffi: ^2.0.0
   http: ^0.13.4
   sync_http: ^0.3.0
+  flutter_platform_utils: ^1.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

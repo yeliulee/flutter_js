@@ -2,16 +2,17 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_js/javascript_runtime.dart';
-import 'package:flutter_js/javascriptcore/jscore_runtime.dart';
+import 'package:flutter_js_ohos/javascript_runtime.dart';
+import 'package:flutter_js_ohos/javascriptcore/jscore_runtime.dart';
+import 'package:flutter_platform_utils/flutter_platform_utils.dart';
 
 import './extensions/fetch.dart';
 import './extensions/handle_promises.dart';
 import './quickjs/quickjs_runtime2.dart';
 
 export './extensions/handle_promises.dart';
-//import 'package:flutter_js/quickjs-sync-server/quickjs_oasis_jsbridge.dart';
-//import 'package:flutter_js/quickjs/quickjs_runtime.dart';
+//import 'package:flutter_js_ohos/quickjs-sync-server/quickjs_oasis_jsbridge.dart';
+//import 'package:flutter_js_ohos/quickjs/quickjs_runtime.dart';
 
 export './quickjs/quickjs_runtime.dart';
 export './quickjs/quickjs_runtime2.dart';
@@ -35,7 +36,7 @@ JavascriptRuntime getJavascriptRuntime({
     runtime = QuickJsRuntime2(stackSize: stackSize);
     // FlutterJs engine = FlutterJs();
     // runtime = QuickJsService(engine);
-  } else if (Platform.isOhos) {
+  } else if (PlatformUtils.isOhos) {
     int stackSize = extraArgs?['stackSize'] ?? 1024 * 1024;
     runtime = QuickJsRuntime2(stackSize: stackSize);
   } else if (Platform.isWindows) {

@@ -1,5 +1,5 @@
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:flutter_js/javascript_runtime.dart';
+import 'package:flutter_js_ohos/javascript_runtime.dart';
 import './xhr.dart';
 
 var _fetchDebug = false;
