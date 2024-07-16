@@ -1,3 +1,7 @@
+# 0.6.7
+
+- fix error of failed to load fetchPolyfill asset
+
 # 0.6.6
 
 - fix repository url
