@@ -1,3 +1,7 @@
+# 0.6.6
+
+- fix repository url
+
 # 0.6.5
 
 - Add original author information
