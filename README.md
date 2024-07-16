@@ -1,5 +1,12 @@
 # Flutter JS plugin
 
+Patched for OpenHarmony
+
+> Originally forked from [flutter_js](https://pub.dev/packages/flutter_js) package
+
+> Original repository: <https://github.com/abner/flutter_js>
+
+
 A Javascript engine to use with flutter. Now it is using QuickJS on Android   through Dart ffi and JavascriptCore on IOS also through dart-ffi. The Javascript runtimes runs synchronously through the dart ffi. So now you can run javascript code as a native citzen inside yours Flutter ~~Mobile~~ Apps (Android, IOS, OpenHarmony/HarmonyOS, Windows, Linux and MacOS are all supported).
 
 In the previous versions we only get the result of evaluated expressions as String. 
@@ -39,7 +46,7 @@ Flutter JS on Desktop
 
 ```yaml
 dependencies:
-  flutter_js: 0.1.0+0
+  flutter_js_ohos: 0.6.5
 ```
 
 ### iOS
@@ -53,6 +60,10 @@ Change the minimum Android sdk version to 21 (or higher) in your `android/app/bu
 ```
 minSdkVersion 21
 ```
+
+### OpenHarmony
+
+Minimum sdk version is 12. Make sure to configure field `compatibleSdkVersion` in your `build-profile.json5` file to 12 or higher.
 
 ## Release Deploy
 

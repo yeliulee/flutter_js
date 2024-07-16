@@ -1,3 +1,8 @@
+# 0.6.5
+
+- Add original author information
+- update documentations
+
 # 0.6.4
 
 - refactor package description
