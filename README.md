@@ -46,7 +46,7 @@ Flutter JS on Desktop
 
 ```yaml
 dependencies:
-  flutter_js_ohos: 0.6.5
+  flutter_js_ohos: 0.6.8
 ```
 
 ### iOS

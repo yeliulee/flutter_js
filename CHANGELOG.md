@@ -1,3 +1,7 @@
+# 0.6.8
+
+- update quickjs lib, built with ohos api 12
+
 # 0.6.7
 
 - fix error of failed to load fetchPolyfill asset
