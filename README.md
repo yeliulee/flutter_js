@@ -42,6 +42,16 @@ dependencies:
   flutter_js: 0.1.0+0
 ```
 
+for OpenHarmony
+
+```yaml
+dependencies:
+  flutter_js:
+    git:
+      url: "https://github.com/yeliulee/flutter_js.git"
+      ref: "ohos-fixed"
+```
+
 ### iOS
 
 Since flutter_js uses the native JavascriptCore, no action is needed.
